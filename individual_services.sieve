@@ -1,4 +1,3 @@
-require "imap4flags";
 require "envelope";
 require "fileinto";
 
@@ -15,7 +14,7 @@ if anyof(address :domain "from" ["google.com"])
 }
 
 # Streaming Services
-if address :domain "from" ["fandango.com", "movies.fandango.com", "email.redbox.com", "email.vudu.com", "mail.disneyplus.com", "disneyplus.com", "hulu.com", "hulumail.com", "mailer.netflix.com", "netflix.com"]
+if address :domain "from" ["crunchyroll.com", "mail.crunchyroll.com", "fandango.com", "movies.fandango.com", "email.redbox.com", "email.vudu.com", "mail.disneyplus.com", "disneyplus.com", "hulu.com", "hulumail.com", "mailer.netflix.com", "netflix.com"]
 {
   fileinto "Streaming";
 }

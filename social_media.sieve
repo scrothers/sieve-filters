@@ -23,4 +23,9 @@ if address :domain "from" ["facebook.com", "facebookmail.com", "reddit.com", "re
   {
     fileinto "Social Media.Reddit";
   }
+
+    if address :domain "from" ["twitter.com"]
+  {
+    fileinto "Social Media.Twitter";
+  }
 }

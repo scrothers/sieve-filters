@@ -1,4 +1,3 @@
-require "imap4flags";
 require "envelope";
 require "fileinto";
 
