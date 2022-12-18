@@ -2,8 +2,8 @@ require "imap4flags";
 require "envelope";
 require "fileinto";
 
-# File away the Nextdoor application.
-if address "from" ["reply_at_rs_email_nextdoor_com_9rmjkfbzqz_94c3cfc9@privaterelay.appleid.com"]
+# Sort and file misc social media or social news updates.
+if address "from" ["people@mail.people.com", "reply_at_rs_email_nextdoor_com_9rmjkfbzqz_94c3cfc9@privaterelay.appleid.com"]
 {
   addflag "\\Seen";
   fileinto "Social Media";
@@ -24,7 +24,7 @@ if address :domain "from" ["facebook.com", "facebookmail.com", "reddit.com", "re
     fileinto "Social Media.Reddit";
   }
 
-    if address :domain "from" ["twitter.com"]
+  if address :domain "from" ["twitter.com"]
   {
     fileinto "Social Media.Twitter";
   }
